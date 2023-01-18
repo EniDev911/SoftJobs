@@ -1,4 +1,4 @@
-## SCREENSHOT 
+## SCREENSHOT
 
 ![screen](screenshot1.png)
 
@@ -8,7 +8,7 @@
 
 ## CREAR DB Y TABLA
 
-Correr el script en psql: 
+Correr el script en psql:
 
 ```sql
 CREATE DATABASE softjobs;
@@ -19,12 +19,21 @@ INSERT INTO usuarios VALUES (DEFAULT, 'john_doe@gmail.com', 'johndoe123', 'admin
 SELECT * FROM usuarios;
 ```
 
-Entrar en el proyecto **backend** para instalar las dependencias y ejecutar el servidor:  
+Entrar en el proyecto **backend** para instalar las dependencias y ejecutar el servidor:
 
 ```bash
 cd backend
 npm install
 npm run dev
+```
+
+Crear un archivo dentro del proyecto **backend** `.env` y remplazar los siguiente valores:
+
+```txt
+DB_DATABASE=softjosb
+DB_USER=su_usuario
+DB_PASSWORD=su_password
+DB_HOST=localhost
 ```
 
 ---
